@@ -1,4 +1,4 @@
-package date;
+package data;
 import praktikum.Bun;
 import praktikum.Database;
 

@@ -1,5 +1,5 @@
 package unit_test;
-import date.CreateRandomBun;
+import data.CreateRandomBun;
 import org.junit.Before;
 import org.junit.Test;
 import praktikum.Bun;

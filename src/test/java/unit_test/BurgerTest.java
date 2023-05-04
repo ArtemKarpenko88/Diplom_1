@@ -1,6 +1,6 @@
 package unit_test;
 
-import date.CreateRandomBun;
+import data.CreateRandomBun;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,8 +26,7 @@ public class BurgerTest {
     Burger burger;
     @Mock
     Ingredient randomIngredient;
-    @Mock
-    CreateRandomBun createRandomBun;
+
 
     float bunPrice = 100f;
     float ingredientPrice;
@@ -35,7 +34,6 @@ public class BurgerTest {
 
     @Before
     public void setUpTest() {
-        burger = new Burger();
         burger.setBuns(bun);
         randomIngredient = Mockito.mock(Ingredient.class);
         Mockito.when(randomIngredient.getPrice()).thenReturn(300f);

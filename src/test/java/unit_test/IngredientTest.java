@@ -1,7 +1,7 @@
 package unit_test;
 
 
-import date.CreateRandomIngredient;
+import data.CreateRandomIngredient;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
