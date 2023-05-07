@@ -1,6 +1,5 @@
 package unit_test;
 
-import data.CreateRandomBun;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,11 +18,9 @@ import static praktikum.IngredientType.SAUCE;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
-
+    Burger burger;
     @Mock
     Bun bun;
-    @Mock
-    Burger burger;
     @Mock
     Ingredient randomIngredient;
 
@@ -34,6 +31,7 @@ public class BurgerTest {
 
     @Before
     public void setUpTest() {
+        burger = new Burger();
         burger.setBuns(bun);
         randomIngredient = Mockito.mock(Ingredient.class);
         Mockito.when(randomIngredient.getPrice()).thenReturn(300f);
